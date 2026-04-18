@@ -1,87 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<title>Kiran Photostate Rania</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Photostate & CSC Center | All Government Services</title>
+    <meta name="description" content="Kiran Photostate & CSC Center पर आधार कार्ड, पैन कार्ड, वोटर आईडी, आयुष्मान कार्ड, ई-श्रम कार्ड, जाति, आय, निवास प्रमाण पत्र, जन्म-मृत्यु प्रमाण पत्र और Family ID के लिए आवेदन करें।">
 
-<style>
-body {
-  margin:0;
-  font-family: Arial;
-}
-header {
-  background: #007bff;
-  color: white;
-  text-align: center;
-  padding: 40px;
-}
-nav {
-  background: black;
-  padding: 10px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-}
-section {
-  padding: 30px;
-}
-.card {
-  background: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-footer {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-</style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #0d6efd, #6610f2);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        header h1 { margin: 0; font-size: 32px; }
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        nav a:hover { color: #ffc107; }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .service-card {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .service-card h2 {
+            color: #0d6efd;
+        }
+        .apply-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .apply-btn:hover { background: #218838; }
+
+        /* Appointment Form */
+        #appointment form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        #appointment input,
+        #appointment select,
+        #appointment textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 22px;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-<h1>Kiran Photostate Rania</h1>
-<p>All Online Services Available</p>
+    <h1>Kiran Photostate & CSC Center</h1>
+    <p>📍 Near Govt. Girl College, Rania | 📞 8168205553</p>
+    <p>सभी सरकारी सेवाएँ एक ही स्थान पर</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Jobs</a>
-<a href="#">Contact</a>
+    <a href="#csc-services">CSC Services</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section>
-<h2>Our Services</h2>
-<div class="card">PAN Card</div>
-<div class="card">Aadhaar Update</div>
-<div class="card">Photocopy & Print</div>
-<div class="card">Online Form</div>
+<div class="container" id="csc-services">
+
+    <!-- Aadhaar -->
+    <div class="service-card">
+        <h2>आधार कार्ड (Aadhaar Card)</h2>
+        <ol>
+            <li>नजदीकी CSC या Aadhaar Enrollment Center पर जाएँ।</li>
+            <li>Enrollment/Update Form भरें।</li>
+            <li>बायोमेट्रिक सत्यापन करवाएँ।</li>
+            <li>Enrollment ID (EID) प्राप्त करें।</li>
+            <li>UIDAI वेबसाइट से e-Aadhaar डाउनलोड करें।</li>
+        </ol>
+        <p><strong>दस्तावेज़:</strong> पहचान प्रमाण, पते का प्रमाण, जन्म तिथि प्रमाण</p>
+        <a href="https://myaadhaar.uidai.gov.in/" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- PAN -->
+    <div class="service-card">
+        <h2>पैन कार्ड (PAN Card)</h2>
+        <ol>
+            <li>NSDL या UTIITSL वेबसाइट खोलें।</li>
+            <li>Form 49A भरें।</li>
+            <li>दस्तावेज़ अपलोड करें और शुल्क का भुगतान करें।</li>
+            <li>Acknowledgment Number से स्टेटस ट्रैक करें।</li>
+        </ol>
+        <p><strong>दस्तावेज़:</strong> आधार कार्ड, पते का प्रमाण, जन्म तिथि प्रमाण</p>
+        <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="apply-btn">Apply via NSDL</a>
+    </div>
+
+    <!-- Voter ID -->
+    <div class="service-card">
+        <h2>वोटर आईडी (Voter ID)</h2>
+        <ol>
+            <li>Voters Service Portal पर जाएँ।</li>
+            <li>Form 6 के माध्यम से नया पंजीकरण करें।</li>
+            <li>दस्तावेज़ अपलोड करें और आवेदन सबमिट करें।</li>
+        </ol>
+        <p><strong>दस्तावेज़:</strong> आधार कार्ड, पते का प्रमाण, फोटो</p>
+        <a href="https://voters.eci.gov.in/" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Ayushman -->
+    <div class="service-card">
+        <h2>आयुष्मान भारत कार्ड (Ayushman Card)</h2>
+        <ol>
+            <li>आधिकारिक वेबसाइट पर “Am I Eligible” पर क्लिक करें।</li>
+            <li>मोबाइल OTP से लॉगिन करें।</li>
+            <li>पात्रता की जाँच करें और कार्ड डाउनलोड करें।</li>
+        </ol>
+        <p><strong>दस्तावेज़:</strong> आधार कार्ड, Family ID (PPP), राशन कार्ड</p>
+        <a href="https://beneficiary.nha.gov.in/" target="_blank" class="apply-btn">Check Eligibility</a>
+    </div>
+
+    <!-- e-Shram -->
+    <div class="service-card">
+        <h2>ई-श्रम कार्ड (e-Shram Card)</h2>
+        <ol>
+            <li>e-Shram पोर्टल पर जाएँ।</li>
+            <li>आधार OTP से रजिस्ट्रेशन करें।</li>
+            <li>व्यक्तिगत और व्यवसाय की जानकारी भरें।</li>
+            <li>UAN कार्ड डाउनलोड करें।</li>
+        </ol>
+        <p><strong>दस्तावेज़:</strong> आधार कार्ड, बैंक पासबुक</p>
+        <a href="https://eshram.gov.in/" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Haryana Certificates -->
+    <div class="service-card">
+        <h2>हरियाणा प्रमाण पत्र सेवाएँ</h2>
+        <ul>
+            <li>जाति प्रमाण पत्र (Caste Certificate)</li>
+            <li>आय प्रमाण पत्र (Income Certificate)</li>
+            <li>निवास प्रमाण पत्र (Domicile Certificate)</li>
+            <li>OBC Certificate</li>
+            <li>जन्म प्रमाण पत्र (Birth Certificate)</li>
+            <li>जन्म प्रमाण पत्र नाम जोड़ना/सुधार</li>
+            <li>मृत्यु प्रमाण पत्र (Death Certificate)</li>
+            <li>Family ID (PPP)</li>
+        </ul>
+        <p><strong>दस्तावेज़:</strong> आधार कार्ड, PPP, संबंधित प्रमाण</p>
+        <a href="https://saralharyana.gov.in/" target="_blank" class="apply-btn">Apply via SARAL</a>
+    </div>
+
+</div>
+
+<!-- Appointment Section -->
+<section id="appointment" class="container">
+    <h2 style="text-align:center;color:#0d6efd;">📅 ऑनलाइन अपॉइंटमेंट बुक करें</h2>
+    <form id="appointmentForm">
+        <input type="text" id="name" placeholder="पूरा नाम" required>
+        <input type="tel" id="mobile" placeholder="मोबाइल नंबर" pattern="[0-9]{10}" required>
+        <select id="service" required>
+            <option value="">-- सेवा चुनें --</option>
+            <option>Aadhaar Card</option>
+            <option>PAN Card</option>
+            <option>Voter ID</option>
+            <option>Ayushman Card</option>
+            <option>e-Shram Card</option>
+            <option>Certificate Services</option>
+            <option>Family ID (PPP)</option>
+        </select>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <textarea id="message" placeholder="अतिरिक्त संदेश (वैकल्पिक)"></textarea>
+        <button type="submit" class="apply-btn">अपॉइंटमेंट बुक करें</button>
+    </form>
+    <p id="successMsg" style="text-align:center;color:green;font-weight:bold;display:none;">
+        ✅ आपका अपॉइंटमेंट सफलतापूर्वक बुक हो गया है!
+    </p>
 </section>
 
-<section>
-<h2>Latest Jobs</h2>
-<div class="card">SSC Recruitment 2026</div>
-<div class="card">Army Bharti</div>
-<div class="card">Railway Jobs</div>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>Mobile: 8168205553</p>
-<p>Address: Near Govt Girls College Rania</p>
+<!-- Contact -->
+<section id="contact" style="text-align:center;padding:20px;background:#0d6efd;color:white;">
+    <h2>संपर्क करें</h2>
+    <p><strong>Kiran Photostate & CSC Center</strong></p>
+    <p>📍 Near Govt. Girl College, Rania</p>
+    <p>📞 <a href="tel:8168205553" style="color:white;">8168205553</a></p>
+    <p>💬 <a href="https://wa.me/918168205553" style="color:white;">WhatsApp Chat</a></p>
 </section>
 
 <footer>
-<p>© 2026 Kiran Photostate</p>
+    <p>© 2026 Kiran Photostate & CSC Center | All Rights Reserved</p>
 </footer>
+
+<a href="https://wa.me/918168205553" class="whatsapp" target="_blank">💬</a>
+
+<!-- JavaScript for WhatsApp Appointment -->
+<script>
+document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var mobile = document.getElementById("mobile").value;
+    var service = document.getElementById("service").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var message = document.getElementById("message").value;
+
+    var whatsappNumber = "918168205553";
+    var text = `नया अपॉइंटमेंट:%0Aनाम: ${name}%0Aमोबाइल: ${mobile}%0Aसेवा: ${service}%0Aतारीख: ${date}%0Aसमय: ${time}%0Aसंदेश: ${message}`;
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+
+    document.getElementById("successMsg").style.display = "block";
+    document.getElementById("appointmentForm").reset();
+});
+</script>
 
 </body>
 </html>
