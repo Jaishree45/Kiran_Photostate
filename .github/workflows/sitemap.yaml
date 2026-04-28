@@ -1,0 +1,13 @@
+# .github/workflows/sitemap.yml
+name: Build sitemap
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cicirello/generate-sitemap@v1
+        with:
+          base-url: "https://jaishree45.github.io/Kiran_Photostate"
